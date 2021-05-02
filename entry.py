@@ -1,4 +1,4 @@
-#Purpose: Creating button widgets
+#Purpose: Creating Entry widgets
 
 #Import everything from tkinter
 from tkinter import *
@@ -14,7 +14,8 @@ e = Entry(root)
 #fg="white"
 #borderwidth=5
 e.pack()
-e.insert(0, "Enter Your Name...")
+e.insert(0, "Enter Your Name...") #default text in box
+
 #create a funciton for the button click
 def myClick():
     hello = "Hello " + e.get()
